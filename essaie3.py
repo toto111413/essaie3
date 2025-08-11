@@ -40,7 +40,7 @@ if not st.session_state.quiz_done:
         if st.session_state.quiz_index >= len(questions):
             st.session_state.quiz_done = True
         else:
-            st.experimental_rerun()
+            st.experimental_rerun() 
 
 else:
     st.success(f"🎉 Quiz terminé ! Ton score final est {st.session_state.quiz_score}/{len(questions)}")
